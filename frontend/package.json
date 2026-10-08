@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "start": "vite --host 0.0.0.0 --port 3000",
-    "build": "tsc --noEmit && vite build --outDir build",
+    "dev": "node api.js && vite",
+    "start": "node api.js && vite --host 0.0.0.0 --port 3000",
+    "build": "node api.js && tsc --noEmit && vite build --outDir build",
     "type-check": "tsc --noEmit",
     "preview": "vite preview",
     "test": "vitest run",
